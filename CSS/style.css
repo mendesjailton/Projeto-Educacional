@@ -1,0 +1,232 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'glossy-shine';
+    src: url(../fonts/Glossy\ Sheen\ Shine\ DEMO.ttf);
+}
+
+:root{
+    /* var(--cor1) */
+    --cor0: #fcc4c5;
+    --cor1: #e17779;
+    --cor2: #d2efeb;
+    --cor3: #38c6b2;
+    --cor4: #0d7365;
+    --cor5: #1fffe0;
+    /* matemática */
+    --cor6: #c50000b6;
+    --cor16: #d10000;
+    --cor17: #ff0000;
+    /* português */
+    --cor7: #0000be;
+    --cor8: #4343db;
+    --cor9: #6c6cec;
+    /* Ciências */
+    --cor10:#005800;
+    --cor11:#3a973a;
+    --cor12:#61af61;
+    --cor18:#00a800;
+    /* Geografia */
+    --cor13:#4e004e;
+    --cor14:#800080;
+    --cor15:#c951c9;
+    --cor19:#c700c7;
+
+
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--fonte-padrao);
+    font-size: 1em;
+    background: rgb(161, 161, 255) url(../imagens/fundo-ed-cel.jpg) no-repeat fixed;
+    background-size: 100vw 100vh;
+}
+
+#conteiner {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+} 
+
+#materia{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-auto-flow: column;
+}
+.contAtual {
+    height: 78vh;
+    width: 95vw;
+    border: 5px solid var(--cor6);
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.521);
+    background-color: rgba(255, 255, 255, 0.74);
+    padding: 5px;
+    gap: 5px;
+    column-gap: 10px;
+}
+
+.opcao {
+    display: grid;
+    align-content: center;
+    border: 5px solid var(--cor1);
+    background-color: white;
+    width: 80%;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#img {
+    grid-row-start: 2;
+    grid-row-end: 6;
+    justify-self: end;
+    width: 125%;
+    background: white url(../imagens/criancas-escola.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #0000be00;
+}
+
+.tit {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    /* formatando o texto */
+    font-family: 'glossy-shine';
+    font-size: 2em;
+    background-clip: text;
+    background: linear-gradient(
+        to right, 
+        blue 25%,
+        green 24%, green 35%,
+        red 20%, red 53%,
+        orange 10%, orange 72.5%,
+        rgb(128, 0, 128) 30%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#titulo{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+/* cor matéria */
+#mat{
+    color: var(--cor16);
+}
+#mat:hover{
+    color: var(--cor17);
+}
+
+#por{
+    color: var(--cor7);
+}
+#por:hover {
+    color: var(--cor8);
+}
+
+#cien{
+    color: var(--cor10);
+}
+#cien:hover{
+    color: var(--cor18);
+}
+
+#geo{
+    color: var(--cor14);
+}
+#geo:hover {
+    color: var(--cor19);
+}
+
+/* Sala de aula */
+#sala {
+    display: none;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+    justify-items: center;
+}
+
+.ano {
+    font-size: 2em;
+}
+
+#anoUm{
+    color: var(--cor16);
+}
+#anoUm:hover{
+    color: var(--cor17);
+}
+
+#anoDois{
+    color: var(--cor7);
+}
+#anoDois:hover {
+    color: var(--cor8);
+}
+
+#anoTres{
+    color: var(--cor10);
+}
+#anoTres:hover{
+    color: var(--cor18);
+}
+#back{
+    color: var(--cor14);
+}
+#back:hover {
+    color: var(--cor19);
+}
+#voltaAno{
+    color: var(--cor7);
+}
+#voltaAno:hover{
+    color: var(--cor8);
+}
+
+#lousa {
+    height: 62vh;
+    width: 85vw;
+    border: 5px solid #deb887;
+    background-color: #4f584d;
+    display: none;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-weight: normal;
+}
+
+.listaEx {
+    margin-left: 20px;
+    text-align: left; 
+}
+#mA1E1:hover {
+    text-decoration: underline;
+}
+#mA1E2:hover {
+    text-decoration: underline;
+}
+#mA1E3:hover {
+    text-decoration: underline;
+}
+
+#exercicios {
+    width: 100%;
+    height: 100%;
+    border: 0px;
+}

@@ -1,0 +1,116 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 10px;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.575);
+    background-color: #4f584d;
+}
+
+ul{
+    list-style: none;
+    margin: 10px 10px 50px 60px;
+    cursor: default;
+
+}
+
+li{
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 2em;
+    border: 3px solid #4f584d;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+li.pointer:hover{
+    border-color: white;
+    cursor: pointer;
+}
+
+#fill{
+    background-color: rgba(0, 0, 255, 0);
+    font-size: 1em;
+    color: white;
+    width: 60px;
+}
+
+span{
+    font-size: 1.5em;
+    margin: 0px 0px 10px 0px;
+}
+span.txtComum{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: white;
+}
+
+.txtL{
+    font-size: 1em;
+}
+
+h1{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#figuras{
+    margin: 15px 0px;
+}
+
+.fruta{
+    margin: 5px;
+    padding: 10px;
+    display: inline;
+}
+
+.fruta:hover{
+    background-color: aqua;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#umAdez{
+    margin: 20px 20px;
+    display: grid;
+    justify-content: center;
+}
+
+.resp{
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
+    color: black;
+}
+
+.resp:hover{
+    cursor: pointer;
+}
+
+#btnCo{
+    margin-top: -25px;
+    margin-bottom: 5px;
+}
+
+.cont{
+    font-size: 1em;
+    display: inline;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#acerto {
+    display: grid;
+    justify-content: center;
+}

@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 230px) and (max-width: 425px){
+    body {
+        font-size: 1em;
+    }
+
+    li {
+        font-size: 1em;
+    }
+
+    .fruta{
+        padding: 5px;
+        margin: 0px;
+    }
+
+  #contagem {
+        font-size: 1em;
+        padding: 5px;
+        margin-top: 100px;
+    }
+
+    #umAdez {
+        margin: 10px 10px;
+    }
+
+    .resp {
+        font-size: 1em;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.26);
+    }
+
+    #fill {
+        width: 18px;
+    }
+}

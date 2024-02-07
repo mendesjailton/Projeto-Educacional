@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+/* BREAKPOINT
+p até 600px
+cels 600 até 768px
+tablets 768 até 992px
+desktop 992 até 1200px
+grandes acima de 1200px
+*/
+
+/* Breakpoint google Chrome
+p - 320 até 425
+*/
+
+/* telas médias*/
+@media screen and (min-width: 426px){
+        
+    #materia{
+        width: 70vw;
+    }    
+
+    .opcao{
+        font-size: 1.2em;
+    }
+    
+    #titulo{
+        font-size: 2.4em;
+        background-clip: text;
+        background: linear-gradient(
+            to right, 
+            blue 33.4%,
+            green 24%, green 40.3%,
+            red 20%, red 52%,
+            orange 10%, orange 59%,
+            purple 30%, purple 68.5%, 
+            rgb(1, 162, 173) 1%
+        );
+        -webkit-background-clip: text;
+    }
+}
+
+/* tablet */
+@media screen and (min-width: 768px) {
+    #materia{
+        width: 50vw;
+    }    
+
+    .opcao{
+        font-size: 1.5em;
+    }
+
+    #titulo{
+        font-size: 3em;
+        background-clip: text;
+        background: linear-gradient(
+            to right, 
+            blue 28.4%,
+            green 24%, green 37.1%,
+            red 20%, red 52%,
+            orange 10%, orange 61.6%,
+            purple 30%, purple 74.2%, 
+            rgb(1, 162, 173) 1%
+        );
+        -webkit-background-clip: text;
+        background-color: white;
+
+    }
+
+    /* layout sala de aula */
+    #sala {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto auto;
+        grid-auto-flow: column;
+        justify-items: center;
+    }
+
+    #lousa {
+        display: grid;
+        width: 72vw;
+        height: 100%;
+        align-content: baseline;
+        padding-left: 20px;
+
+        grid-row-start: 2;
+        grid-row-end: 6;
+
+    }
+
+    #exercicios {
+        height: 75vh;
+    }
+
+    #titSala {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    #titSala {
+        font-size: 5em;
+    }
+}

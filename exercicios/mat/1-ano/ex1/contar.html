@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contando</title>
+    <link rel="stylesheet" href="../style-questoes.css">
+    <link rel="stylesheet" href="../media-query-exs.css">
+</head>
+<body>
+    <div id="lousa">
+        <h1>
+            <button id="voz1">&#x1F50A</button>
+            <span id="txtTit" class="txtL">Aprendendo a contar</span>
+        </h1>
+        <p>
+            <button id="voz2">&#x1F50A</button>
+            <span id="txt1" class="txtL">Conte as figuras. Clique em cada uma para acompanhar enquanto conta.</span>
+        </p>
+        <div id="figuras"></div>
+        <p class="cont" id="contagem">0</p> 
+        <p>
+            <br>
+            <button id="voz3">&#x1F50A</button>
+            <span id="txt2" class="txtL">Qual a quantidade de frutas?</span>
+        </p>
+        <section id="umAdez">
+            <p><span class="resp" id="resp1">01</span> <span class="resp" id="resp2">02</span> <span class="resp" id="resp3">03</span> <span class="resp" id="resp4">04</span> <span class="resp" id="resp5">05</span></p>
+            <p><span class="resp" id="resp6">06</span> <span class="resp" id="resp7">07</span> <span class="resp" id="resp8">08</span> <span class="resp" id="resp9">09</span> <span class="resp" id="resp10">10</span></p>
+        </section>
+        <div id="btnCo">
+            <button id="voz4">&#x1F50A</button>
+            <button id="correcao">Corrigir</button>
+        </div>
+    </div>
+
+    <div id="acerto">
+        <h1>Correto! Parabéns!</h1>
+        <button id="prox">Próxima questão &#x1F3AF</button>
+    </div>
+    <div id="erro">
+        <h1>ERRADO!</h1>
+        <h2>Revisão</h2>
+        <p id="answer">A <strong>resposta correta</strong>  é: 04.</p>
+        <p id="seuErro">Você respondeu: ${}</p>
+        <button id="proxi">Próxima questão &#x1F3AF</button>
+    </div>
+
+    <script src="leitor-texto.js"></script>
+    <script src="ano1ex.js"></script>
+</body>
+</html>
